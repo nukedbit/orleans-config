@@ -5,7 +5,7 @@ using Orleans.Runtime.Configuration;
 
 namespace NukedBit.Orleans.Config
 {
-    public class OrleansServerXmlConfigElement : ConfigurationElement
+    public class OrleansSiloXmlConfigElement : ConfigurationElement
     {
         private string Config { get; set; }
 

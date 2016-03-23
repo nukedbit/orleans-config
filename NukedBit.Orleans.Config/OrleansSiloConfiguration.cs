@@ -2,16 +2,16 @@ using System.Configuration;
 
 namespace NukedBit.Orleans.Config
 {
-    public class OrleansServerConfiguration : ConfigurationSection
+    public class OrleansSiloConfiguration : ConfigurationSection
     {
 
         // Create a "font" element.
         [ConfigurationProperty("xmlConfig")]
-        public OrleansServerXmlConfigElement XmlConfig
+        public OrleansSiloXmlConfigElement XmlConfig
         {
             get
             {
-                return (OrleansServerXmlConfigElement)this["xmlConfig"];
+                return (OrleansSiloXmlConfigElement)this["xmlConfig"];
             }
             set
             {

@@ -76,8 +76,8 @@
   <ItemGroup>
     <Compile Include="OrleansClientConfiguration.cs" />
     <Compile Include="OrleansClientXmlConfigElement.cs" />
-    <Compile Include="OrleansServerXmlConfigElement.cs" />
-    <Compile Include="OrleansServerConfiguration.cs" />
+    <Compile Include="OrleansSiloXmlConfigElement.cs" />
+    <Compile Include="OrleansSiloConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
