@@ -58,8 +58,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrleansClientConfig.cs" />
     <Compile Include="OrleansClientConfiguration.cs" />
     <Compile Include="OrleansClientXmlConfigElement.cs" />
+    <Compile Include="OrleansSiloConfig.cs" />
     <Compile Include="OrleansSiloXmlConfigElement.cs" />
     <Compile Include="OrleansSiloConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

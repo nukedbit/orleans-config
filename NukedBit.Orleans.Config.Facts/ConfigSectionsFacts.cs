@@ -8,8 +8,7 @@ namespace NukedBit.Orleans.Config.Facts
         [Fact]
         public void ServerConfig()
         {
-            var config = (OrleansSiloConfiguration)System.Configuration.ConfigurationManager.GetSection("orleansSiloConfig");
-            var clusterConfig = config.XmlConfig.Load();
+            var clusterConfig = OrleansSiloConfig.From("orleansSiloConfig").Get();
             Assert.True(clusterConfig.Globals.GetAllProviderConfigurations().Any(p => p.Name == "MemoryStore"));
         }
 
@@ -17,8 +16,7 @@ namespace NukedBit.Orleans.Config.Facts
         [Fact]
         public void ClientConfig()
         {
-            var config = (OrleansClientConfiguration)System.Configuration.ConfigurationManager.GetSection("orleansClientConfig");
-            var clusterConfig = config.XmlConfig.Load();
+            var clusterConfig = OrleansClientConfig.From("orleansClientConfig").Get();
             Assert.True(clusterConfig.Gateways.Count == 1);
         }
     }

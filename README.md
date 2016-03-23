@@ -52,4 +52,10 @@ Client Side
             </xmlConfig>
         </orleansClientConfig>        
           
+          
+How to read from code
+
+        var siloConfig = OrleansSiloConfig.From("orleansSiloConfig").Get();
+        
+        var clientConfig = OrleansClientConfig.From("orleansClientConfig").Get();
                                 
