@@ -1,5 +1,9 @@
 # orleans-config
 
+Install from nuget
+
+        Install-Package NukedBit.Orleans.Config 
+
 This is a simple library for loading Orleans Config from app.config and Web.config, that can be usefull on small projects, so you can use config file transformations
 
 to use on your silo
