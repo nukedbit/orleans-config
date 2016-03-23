@@ -24,7 +24,7 @@
 		</dependencies>
 	</metadata>
 	<files>				 
-		<file src=".\bin\Release\NukedBit.Orleans.Config.*" target="lib\net451" />		
+		<file src="bin\Release\NukedBit.Orleans.Config.*" target="lib\net451" />		
 	</files>
 </package>
 
